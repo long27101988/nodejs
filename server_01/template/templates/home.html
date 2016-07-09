@@ -1,0 +1,15 @@
+<div>
+	{{#have_albums}}
+		<p>Number of albums: {{albums.length}}</p>
+	{{/have_albums}}
+	<ul>
+		{{#albums}}
+		<li>
+			<a href="http://localhost:3000/pages/album/{{album_name}}">{{title}}</a>
+		</li>
+		{{/albums}}
+		{{^albums}}
+		<li>Sorry, there are no currently no album</li>
+		{{/albums}}
+	</ul>
+</div>
